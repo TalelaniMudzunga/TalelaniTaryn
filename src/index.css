@@ -4,6 +4,6 @@ body{
 .weather-app{
     background-color: aliceblue;
     max-width: 600px;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 30px;
 }
