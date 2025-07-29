@@ -1,11 +1,10 @@
 body{
     background-color: #EAF7F4;
-    .oswald-uniquifier {
             font-family: "Oswald", sans-serif;
             font-optical-sizing: auto;
             font-weight: weight;
             font-style: normal;
-        }
+        
 }
 .weather-app{
     background-color: white;
