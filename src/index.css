@@ -2,8 +2,9 @@ body{
     background-color: azure;
 }
 .weather-app{
-    background-color: aliceblue;
+    background-color: whitesmoke;
     max-width: 600px;
     margin: 20px auto;
     padding: 30px;
+    box-shadow: ;
 }
