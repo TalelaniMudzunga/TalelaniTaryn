@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 <body>
     <div class="weather-app">
    <header>
-    <form class="seach-form">
+    <form class="search-form">
         <input type="search" placeholder="Enter a city" class="search-form-input"/>
         <input type="submit" value="search" class="search-form-button"/>
     </form>
@@ -23,20 +23,21 @@
     <h1 class="weather-app-city">Soweto</h1>
     <p class="weather-app-values">
         Wednesday
-        10:30, few
-        clouds
+        10:30, few clouds
         <br/>
         Humidity: <strong>75%</strong> 
         Wind: <strong> 6.69km/h</strong>
     </p>
     </div>
     <div class="weather-app-temp">
-        🌥️ 17℃
+       <span class="weather-app-icon"> 🌥️</span> 
+       <div class="weather-app-temperature">17</div>
+       <div class="weather-app-unit">℃</div>
     </div>
     </div>
    </main> 
    <footer>
-    This project was codded by
+    This project was coded by
     <a href="https://github.com/TalelaniMudzunga" target="_blank">Talelani Mudzunga</a>
     and is
     <a href="https://github.com/TalelaniMudzunga/TalelaniTaryn" target="_blank">open-sourced on github</a>
