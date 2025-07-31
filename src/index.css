@@ -1,25 +1,29 @@
-body{
+body {
     background-color: #EAF7F4;
-            font-family: "Oswald", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
-        
-}
-header{
-    border-bottom: 1px solid skyblue;
-    padding:0 0 20px 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background: linear-gradient(135deg, #c2e9fb);
+    color: #333;
+
 }
 
-.weather-app{
+header {
+    border-bottom: 1px solid skyblue;
+    padding: 0 0 20px 0;
+}
+
+.weather-app {
     background-color: skyblue;
     max-width: 600px;
     margin: 20px auto;
     padding: 30px;
-    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
 }
-.search-form-input{
+
+.search-form-input {
     background-color: white;
     border: none;
     border-radius: 5px;
@@ -27,57 +31,71 @@ header{
     font-size: 12px;
     padding: 10px 10px;
 }
-.search-form-button{
+
+.search-form-button {
     background-color: whitesmoke;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     margin-left: 5px;
     font-size: 12px;
-    
+    cursor: pointer;
+    transition: background 0.3s;
+
 }
-.weather-app-data{
+.search-form-button:hover{
+    background: #005dc1;
+}
+
+.weather-app-data {
     display: flex;
     justify-content: space-between;
 }
-.weather-app-city{
+
+.weather-app-city {
     margin: 0 auto;
     font-size: 30px;
     line-height: 45px;
 }
-.weather-app-values{
+
+.weather-app-values {
     font-size: 12px;
     line-height: 20px;
 }
-.weather-app-values strong{
+
+.weather-app-values strong {
     color: palevioletred;
 }
-.weather-app-temp{
+
+.weather-app-temp {
     display: flex;
 }
-.weather-app-temperature{
+
+.weather-app-temperature {
     font-size: 50px;
     font-weight: bold;
 
 }
-.weather-app-icon{
+
+.weather-app-icon {
     font-size: 40px;
     margin-bottom: 20px;
 }
-.weather-app-unit{
-  margin-top: 5px; 
-  font-size: 20px; 
+
+.weather-app-unit {
+    margin-top: 5px;
+    font-size: 20px;
 }
 
-footer{
+footer {
     border-bottom: 1px solid skyblue;
-        padding: 20px 0 0 0;
-        text-align: center;
-        font-size: 12px;
-        color: gray;
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
 
 }
-a{
+
+a {
     color: palevioletred;
 }
-
