@@ -16,7 +16,7 @@
     <div class="weather-app">
         <header>
             <form class="search-form" id="search-form">
-                <input type="search" placeholder="Enter a city" class="search-form-input" id="search-form-input"/>
+                <input type="search" placeholder="Enter a city" class="search-form-input" id="search-form-input" />
                 <input type="submit" value="search" class="search-form-button" />
             </form>
         </header>
@@ -25,19 +25,21 @@
                 <div>
                     <h1 class="weather-app-city" id="city">Soweto</h1>
                     <p class="weather-app-values">
-                        <span id="time"></span> 
-                        <span id="description">few clouds</span> 
+                        <span id="time"></span>
+                        <span id="description">few clouds</span>
                         <br />
                         Humidity: <strong id="humidity"></strong>
                         Wind: <strong id="wind-speed"></strong>
                     </p>
                 </div>
-                <div class="weather-app-temp">
-                    <span class="weather-app-icon"> 🌥️</span>
-                    <div class="weather-app-temperature" id="temperature">17</div>
-                    <div class="weather-app-unit">℃</div>
+                <div>
+                    <div class="weather-app-icon">
+                            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                                class="weather-icon" id="weather-icon" alt="Weather Icon" />
+                        <div class="weather-app-temperature" id="temperature">17</div>
+                        <div class="weather-app-unit">℃</div>
+                    </div>
                 </div>
-            </div>
         </main>
         <footer>
             This project was coded by
