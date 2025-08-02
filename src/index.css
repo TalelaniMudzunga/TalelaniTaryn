@@ -50,6 +50,8 @@ header {
 .weather-app-data {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .weather-app-city {
@@ -72,20 +74,41 @@ header {
 }
 
 .weather-app-temperature {
-    font-size: 50px;
+    font-size: 48px;
     font-weight: bold;
+    line-height: 1;
 
 }
 
 .weather-app-icon {
-    font-size: 40px;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.weather-icon {
+    width: 75px;
+    height: 75px;
+    
+    
+    
+}
+.weather-app-temperature,
+.weather-app-unit {
+    display: inline-block;
+    vertical-align: middle;
+
 }
 
 .weather-app-unit {
-    margin-top: 5px;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 28px;
+    margin-left: 5px;
 }
+    
+
+
+
 
 footer {
     border-bottom: 1px solid skyblue;
