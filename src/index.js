@@ -9,6 +9,8 @@ function refreshWeather(response) {
     let date = new Date(response.data.time * 1000);
     let iconElement = document.querySelector("#weather-icon"); 
     
+    
+
 
     cityElement.innerHTML = response.data.city;
     timeElement.innerHTML = date.toLocaleString("en-US", {
@@ -26,7 +28,7 @@ function refreshWeather(response) {
 }
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class="forecast-container">`;
+  let forecastHTML = "";
 
   response.data.daily.slice(1, 6).forEach(function (day) {
     let date = new Date(day.time * 1000);
@@ -44,15 +46,18 @@ function displayForecast(response) {
     `;
   });
 
-  forecastHTML += `</div>`;
+
   forecastElement.innerHTML = forecastHTML;
 }
 
 
+
 function searchCity(city) {
     let apiKey = "4798o43t6a95dd37517f901a314b0ebe";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(refreshWeather);
+    let currentUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    let forecastUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+    axios.get(currentUrl).then(refreshWeather);
+    axios.get(forecastUrl).then(displayForecast);
 }
 function handleSearch(event) {
     event.preventDefault(); 
