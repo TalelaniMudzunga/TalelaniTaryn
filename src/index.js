@@ -24,6 +24,31 @@ function refreshWeather(response) {
     iconElement.src = response.data.condition.icon_url;
     iconElement.alt = response.data.condition.description;
 }
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="forecast-container">`;
+
+  response.data.daily.slice(1, 6).forEach(function (day) {
+    let date = new Date(day.time * 1000);
+    forecastHTML += `
+      <div class="forecast-info">
+        <div class="forecast-day">${date.toLocaleDateString("en-US", { weekday: "short" })}</div>
+        <div class="forecast-icon">
+          <img src="${day.condition.icon_url}" alt="${day.condition.description}" width="48" />
+        </div>
+        <div class="forecast-temp">
+          <div class="forecast-temp-max">${Math.round(day.temperature.maximum)}°</div>
+          <div class="forecast-temp-min">${Math.round(day.temperature.minimum)}°</div>
+        </div>
+      </div>
+    `;
+  });
+
+  forecastHTML += `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+
 function searchCity(city) {
     let apiKey = "4798o43t6a95dd37517f901a314b0ebe";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
@@ -41,4 +66,4 @@ function handleSearch(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearch);
 searchCity("Soweto"); 
-    
+

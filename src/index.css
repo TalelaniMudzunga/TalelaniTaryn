@@ -23,6 +23,7 @@ header {
     border-radius: 15px;
 }
 
+
 .search-form-input {
     background-color: white;
     border: none;
@@ -105,11 +106,47 @@ header {
     margin-bottom: 28px;
     margin-left: 5px;
 }
+.temperature-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     
+}
 
-
-
-
+.weather-forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;   
+}
+    
+   .forecast-day {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+   }
+   .forecast-icon {
+    font-size: 24px;
+    text-align: center;
+    margin: 5px 0;
+   }
+   .forecast-temp-min,
+   .forecast-temp-max {
+    font-size: 12px;
+    color: palevioletred;
+    text-align: center;
+}
+   .forecast-temp-max{
+    font-weight: bold;
+   } 
+   .forecast-temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+   }
+   
+  
 footer {
     border-bottom: 1px solid skyblue;
     padding: 20px 0 0 0;
